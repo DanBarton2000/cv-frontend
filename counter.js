@@ -1,4 +1,4 @@
-const apiUrl = "https://ibsfvxx7o1.execute-api.eu-west-2.amazonaws.com/";
+const apiUrl = "https://m72hn1xni3.execute-api.eu-west-2.amazonaws.com/Counter";
 
 fetch(apiUrl)
   .then(response => {
