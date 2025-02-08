@@ -1,75 +1,105 @@
 * {
-  max-width: 850px;
-  margin: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-div {
-  border-radius: 5px;
-}
-
-#header {
-  height: 40px;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-}
-
-#title {
-  margin-left: 3%;
-}
-
-#footer {
-  height: 50px;
-  width: 100%;
-  clear: both;
-  position: relative;
-}
-
-.left {
-  height: 1000px;
-  width: 45px;
-  float: left;
-  position: fixed;
-}
-
-.right {
-  height: 1000px;
-  width: 45px;
-  float: right;
-  position: inherit;
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
 }
 
 .content {
-  display: inline-block;
-  margin-top: 6px;
-  margin-left: 55px;
-  width: 75%;
-  height: 1000px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-p,
+h1, h2 {
+  color: #2a2a72;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  border-bottom: 2px solid #2a2a72;
+  padding-bottom: 5px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #444;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #005f99;
+  text-decoration: underline;
+}
+
+ul {
+  margin: 10px 0 20px 20px;
+}
+
 li {
-  font-family: 'Cormorant Garamond';
+  margin-bottom: 8px;
 }
 
-.head {
-  font-size: 20px;
+#counter-text {
+  display: inline;
 }
 
-#name {
-  font-family: Sacramento;
-  float: right;
-  margin-top: 10px;
-  margin-right: 4%;
+#counter {
+  font-size: 1.3em;
+  color: #007acc;
+  font-weight: bold;
+  display: inline;
+  margin-left: 5px;
 }
 
-@media only screen and (max-width: 430px) {
-  .left,
-  .right {
-    display: none;
+#footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  color: #777;
+  font-size: 0.9em;
+}
+
+/* 768px is a common width for tablets */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
   }
-  .content {
-    width: 100%;
-    margin-left: 10px;
+
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  h3 {
+    font-size: 1.1em;
   }
 }
